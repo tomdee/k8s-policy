@@ -34,7 +34,7 @@ ut:
 	calico/test \
 	nosetests tests/unit -c nose.cfg
 
-image.created: dist/policy_agent 
+image.created:
 	# Build the docker image for the policy agent.
 	docker build -t calico/k8s-policy-agent . 
 	touch image.created
